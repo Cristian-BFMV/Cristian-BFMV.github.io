@@ -9,42 +9,36 @@
     <div class="keys">
       <div data-key="65" class="key">
         <kbd>A</kbd>
-        <span class="sound">clap</span>
+        <span class="sound">Again</span>
       </div>
       <div data-key="83" class="key">
         <kbd>S</kbd>
-        <span class="sound">hihat</span>
+        <span class="sound">Suck</span>
       </div>
       <div data-key="68" class="key">
         <kbd>D</kbd>
-        <span class="sound">kick</span>
+        <span class="sound">Mom</span>
       </div>
       <div data-key="70" class="key">
         <kbd>F</kbd>
-        <span class="sound">openhat</span>
+        <span class="sound">Nuts</span>
       </div>
       <div data-key="71" class="key">
         <kbd>G</kbd>
-        <span class="sound">boom</span>
+        <span class="sound">Pos</span>
       </div>
       <div data-key="72" class="key">
         <kbd>H</kbd>
-        <span class="sound">ride</span>
-      </div>
-      <div data-key="74" class="key">
-        <kbd>J</kbd>
-        <span class="sound">snare</span>
+        <span class="sound">Sob</span>
       </div>
     </div>
 
-    <audio data-key="65" src="sounds/Kellyquemonda.m4a"></audio>
-    <audio data-key="83" src="sounds/Cuandovasapagar.m4a"></audio>
-    <audio data-key="68" src="sounds/A las 3 media.m4a"></audio>
-    <audio data-key="70" src="sounds/Comovasaconseguir.m4a"></audio>
-    <audio data-key="71" src="sounds/Nosenose.m4a"></audio>
-    <audio data-key="72" src="sounds/Unamierda.m4a"></audio>
-    <audio data-key="74" src="sounds/Pasoporesamiersaenmediahora.m4a"></audio>
-    <audio data-key="birds" src="sounds/Sunny Day.mp3"></audio>
+    <audio data-key="65" src="sounds/again.mp3"></audio>
+    <audio data-key="83" src="sounds/suck.mp3"></audio>
+    <audio data-key="68" src="sounds/mom.mp3"></audio>
+    <audio data-key="70" src="sounds/nuts-3.mp3"></audio>
+    <audio data-key="71" src="sounds/pos-2.mp3"></audio>
+    <audio data-key="72" src="sounds/sob-2.mp3"></audio>
 
     <script>
       window.addEventListener("keydown", function(e) {
@@ -63,14 +57,6 @@
       keys.forEach(key =>
         key.addEventListener("transitionend", removeTransition)
       );
-      //   window.onload = function main() {
-      //     const birds = document.querySelector(`audio[data-key="birds"]`);
-      //     birds.play();
-      //     birds.addEventListener("ended", function() {
-      //       this.currentTime = 0;
-      //       this.play();
-      //     });
-      //   };
     </script>
   </body>
 </html>
